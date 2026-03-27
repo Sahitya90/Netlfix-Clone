@@ -1,0 +1,71 @@
+.hero{
+    position: relative;
+
+}
+.banner-img{
+    width: 100%;
+    /* the code below is to create 
+    a smooth fading effect on an  image or container,
+    gradient: the image slowly transitions from invisible to visible,
+    by the time it reaches 75% of the screen, the 
+    image is fully visible*/
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black  75%);
+
+}
+.hero-caption{
+    position: absolute;
+    width: 100%;
+    padding-left: 6%;
+    bottom: 0;
+}
+.caption-img{
+    width: 90%;
+    max-width: 420px;
+    margin-bottom: 30px;
+}
+.hero-caption p{
+    max-width: 700px;
+    font-size: 17px;
+    margin-bottom: 20px;
+
+}
+.hero-buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    
+
+}
+.margin-buttons .btn img{
+    width: 25px;
+}
+.hero-buttons .btn{
+    border: 0;
+    width: 200px;
+    height: 100px;
+    outline: 0;
+    padding: 8px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hero-buttons .btn.dark-btn{
+    color: #fff;
+    background: hsla(240, 0%, 43%, 0.702);
+}
+.hero-buttons .btn:hover{
+    background: #ffffffbf;
+}
+.hero-buttons .btn.dark-btn:hover{
+    background:  hsla(240, 0%, 33%, 0.702);
+}
+.more-cards{
+    padding-left: 6%;
+    
+}

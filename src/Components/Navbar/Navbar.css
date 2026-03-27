@@ -1,0 +1,77 @@
+.navbar{
+    width: 100%;
+    padding: 20px 6%;
+    /* to align all the elements horizontally we use flex here */
+    display: flex;
+    /* so that the left and right column are aligned side by side and there will be space between them  */
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image:linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent) ;
+    z-index: 1;
+}
+.navbar-left{
+    /* now to align the logo and the list items side by side, we use flex */
+    display: flex;
+    align-items: center;
+    gap: 50px;/* gap between menu links and image*/
+}
+.navbar-left img{
+    width: 90px;
+}
+.navbar-left ul{
+    /*now again we use flex to align the list items side by side to each other*/
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.navbar-left ul li{
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar-right .icons{
+    width: 20px;
+    cursor: pointer;
+}
+.navbar-right .profile{
+    border-radius: 35px;
+}
+.navbar-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-pointer{
+    width: 15px;
+    height: 15px;
+}
+.navbar .dropdown{
+    position: absolute;
+    top: 100%; 
+    right: 0;
+    width: max-content;
+    background: #191919;
+    padding: 18px 22px;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+.navbar .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+.navbar-profile:hover .dropdown{
+    display: block;
+}
+.nav-dark{
+    background: hsl(0, 0%, 10%);
+}
